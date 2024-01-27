@@ -44,6 +44,8 @@ pub fn tokenize(program: &str) -> Result<Vec<Token>, TokenError> {
 }
 
 mod tests {
+    use std::result;
+
     use super::*;
 
     #[test]
@@ -86,6 +88,34 @@ mod tests {
                 Token::Symbol("side".to_string()),
                 Token::RParen,
                 Token::RParen
+            ]
+        );
+    }
+
+    #[test]
+    fn test_no_paren() {
+        let tokens = tokenize("+ 1 2").unwrap_or(vec![]);
+        // it should return an err
+        assert_eq!(
+            tokens,
+            vec![
+                Token::Symbol("+".to_string()),
+                Token::Integer(1),
+                Token::Integer(2),
+            ]
+        );
+    }
+
+    #[test]
+    fn test_wrong_whitespace() {
+        let tokens = tokenize("+   1     2 ").unwrap_or(vec![]);
+        // it should return an err
+        assert_eq!(
+            tokens,
+            vec![
+                Token::Symbol("+".to_string()),
+                Token::Integer(1),
+                Token::Integer(2),
             ]
         );
     }
