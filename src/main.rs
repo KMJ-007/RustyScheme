@@ -1,8 +1,7 @@
 mod lexer;
-
-use lexer::hello_karan;
+mod parser;
 
 fn main() {
-    hello_karan();
     lexer::hello_karan();
+    parser::hello_karan();
 }

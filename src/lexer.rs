@@ -1,5 +1,5 @@
 pub fn hello_karan() {
-    println!("hello Karan")
+    println!("hello Karan from lexer")
 }
 
 #[derive(Debug, Clone, PartialEq)]
