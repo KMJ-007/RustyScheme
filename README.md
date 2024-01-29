@@ -1,4 +1,4 @@
-# RustyScheme
+# rusty_scheme
 A Lisp interpreter in Rust.
 
 ## Features

@@ -38,8 +38,8 @@ pub fn tokenize(program: &str) -> Result<Vec<Token>, TokenError> {
             }
         }
     }
-    println!("this are the tokens");
-    println!("{:?}", tokens);
+    // println!("this are the tokens");
+    // println!("{:?}", tokens);
     Ok(tokens)
 }
 
