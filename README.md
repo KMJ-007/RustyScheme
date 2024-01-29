@@ -12,7 +12,9 @@ I completed half of the [Rust book](https://doc.rust-lang.org/book/) and 50% of 
 This project would not have been possible without this [guide](https://vishpat.github.io/lisp-rs/overview.html).
 
 why lisp ?
-  - i read hackers and painters and want to get hands dirty
+  - i read hackers and painters and want to understand it more
+  - and this quote from [Rich Programmer Food](https://steve-yegge.blogspot.com/2007/06/rich-programmer-food.html)
+  > "If you don't know how compilers work, then you don't know how computers work."
 
 ### Challenges and Learnings
 This was my first time writing interpreter, during the development, I used ChatGPT and did a lot of Googling, redditing(is is real term?):
@@ -26,4 +28,9 @@ This was my first time writing interpreter, during the development, I used ChatG
   - want to debug or allow clone ? add `#[derive(Debug, Clone)]`
 - asked about this [None and is_empty question](https://www.reddit.com/r/rust/comments/1acazl7/redundant_check_in_rust_parsing_loop_none_after/), people on reddit are really nice, they replied and taught me new things
 - spend half hour debugging because i put semi colon after Ok at the end 😭
-    
+- learn about reference pointers this was lot of confusing, and i still think i only understand somewhat, still i haven't got intuitive understanding, but i managed to implement it
+- got more used to rust syntax, and this was good then just watching and reading about rust on the internet
+
+# features pending:
+- supporting float values
+- divide by zero and similar errors
