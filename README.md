@@ -34,3 +34,7 @@ This was my first time writing interpreter, during the development, I used ChatG
 # features pending:
 - supporting float values
 - divide by zero and similar errors
+
+
+# Reddit Discussion:
+[Built a Lisp Interpreter in Rust – Roast my Code!](https://www.reddit.com/r/rust/comments/1ae52te/built_a_lisp_interpreter_in_rust_roast_my_code/)
